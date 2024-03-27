@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <div class="container-fluid">
+    <div class="d-xl-flex p-2 bd-highlight justify-content-center align-items-center col-xxl-12">
+      <div class="form-group w-30rem p-5">
+        <h1>days_left : </h1>
+        <div class="">
+          <input type="text" id="days_left" value="{{ data.days_left }}" readonly class="form-control">
+          <button data-copy-target="days_left" class="btn btn-primary copy-button">Copy</button>
+        </div>
+        <br>
+        <h1>irandcel_germany : </h1>
+        <div class="">
+          <input type="text" id="irandcel_germany" value="{{ data.irancel_germany }}" readonly class="form-control">
+          <button data-copy-target="irandcel_germany" class="btn btn-primary copy-button">Copy</button>
+        </div>
+        <br>
+        <h1>irandcel_netherland : </h1>
+        <div class="">
+          <input type="text" id="irandcel_netherland" value="{{ data.irancel_netherland }}" readonly class="form-control">
+          <button data-copy-target="irandcel_netherland" class="btn btn-primary copy-button">Copy</button>
+        </div>
+        <br>
+        <h1>irandcel_australia : </h1>
+        <div class="">
+          <input type="text" id="irandcel_australia" value="{{ data.irancel_australia }}" readonly class="form-control">
+          <button data-copy-target="irandcel_australia" class="btn btn-primary copy-button">Copy</button>
+        </div>
+        <br>
+        <h1>hamrahaval_finland : </h1>
+        <div class="">
+          <input type="text" id="hamrahaval_finland" value="{{ data.hamrahaval_finland }}" readonly class="form-control">
+          <button data-copy-target="hamrahaval_finland" class="btn btn-primary copy-button">Copy</button>
+        </div>
+        <br>
+        <h1>hamrahaval_germany : </h1>
+        <div class="">
+          <input type="text" id="hamrahaval_germany" value="{{ data.hamrahaval_germany }}" readonly class="form-control">
+          <button data-copy-target="hamrahaval_germany" class="btn btn-primary copy-button">Copy</button>
+        </div>
+        <br>
+        <a href="{% url 'InputCodePage' %}" class="btn btn-primary form-control">Back</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/copy_script.js"></script>
+{% endblock body %}

@@ -1,5 +1,17 @@
 {% extends "base.html" %}
 
 {% block body %}
-    <h1>input code page</h1>
+    <form action="" method="post">
+        <div class="container-fluid">
+            <div class="d-xl-flex p-2 bd-highlight justify-content-center align-items-center col-xxl-12">
+                <div class="form-group w-30rem p-5">
+                    <h1 style="text-align: center;">Config Code : </h1>
+                    {{form}}
+                    <h1></h1>
+                    <button type="submit" class="btn btn-primary form-control w-30rem">submit</button>
+                    {% csrf_token %}
+                </div>
+            </div>
+        </div>
+    </form>
 {% endblock body %}
